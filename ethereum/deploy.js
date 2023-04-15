@@ -6,6 +6,7 @@ const provider = new HDWalletProvider(
   'call glow acoustic vintage front ring trade assist shuffle mimic volume reject',
   'https://rinkeby.infura.io/orDImgKRzwNrVCDrAk5Q'
 );
+
 const web3 = new Web3(provider);
 
 const deploy = async () => {
@@ -21,4 +22,5 @@ const deploy = async () => {
 
   console.log('Contract deployed to', result.options.address);
 };
+
 deploy();
